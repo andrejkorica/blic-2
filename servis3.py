@@ -16,7 +16,7 @@ async def filterJoke(request):
         priv.append({"setup":req.get("setup")})
         priv.append({"punchline":req.get("punchline")})
         print(temp)
-        return web.json_response({"Status": "ok","jokez":request}, status=200)
+        return web.json_response({"Status": "ok","message":request}, status=200)
     except Exception as e:
         return web.json_response({"Status": "error"}, status=500)
 
