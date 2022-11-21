@@ -22,7 +22,7 @@ async def filterUser(request):
         priv = []
 
         print(tasks)
-        return web.json_response({"Status": "ok","message":req}, status=200)
+        return web.json_response({"Status": "ok","message":request}, status=200)
     except Exception as e:
         return web.json_response({"Status": "error"}, status=500)
 
